@@ -1,0 +1,256 @@
+/* app/page.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+.App-header input {
+  margin-top: 10px;
+  padding: 5px;
+  width: 300px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.croma-image {
+  opacity: 1;
+}
+
+.reliance-image {
+  opacity: 0;
+}
+
+.image-container:hover .croma-image {
+  opacity: 0;
+}
+
+.image-container:hover .reliance-image {
+  opacity: 1;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.price-comparison {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.croma-price, .reliance-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lowest-price-tag {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.product-mrp {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+.product-discount {
+  font-size: 14px;
+  color: #4CAF50;
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+.search-input {
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Styles for the detailed product page */
+.product-details {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.retailer-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.croma-details, .reliance-details {
+  width: 48%;
+}
+
+.croma-details h2, .reliance-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.croma-details img, .reliance-details img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.croma-details a, .reliance-details a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.croma-details a:hover, .reliance-details a:hover {
+  background-color: #45a049;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .croma-section, .reliance-section {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .product-mrp, .product-discount {
+    margin-top: 5px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center; /* Centers the pagination in the container */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #007bff; /* Primary color for the buttons */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Padding for size */
+    margin: 0 5px; /* Spacing between buttons */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc; /* Gray color for disabled state */
+    cursor: not-allowed;
+    transform: none; /* No lift effect for disabled buttons */
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #333; /* Text color for page indicator */
+  }
+  

@@ -1,0 +1,49 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    margin: 12px 0;
+  }
+  
+  .product-title a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+  }
+  
+  .product-lowest-price {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .product-mrp {
+    color: #e74c3c;
+    margin-left: 8px;
+  }
+  
+  .product-mrp del {
+    color: #bdc3c7;
+  }
+  
