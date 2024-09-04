@@ -7,35 +7,7 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Basic styles for all anchor tags */
-a {
-  color: #007bff; /* Link color */
-  text-decoration: none; /* Remove the underline */
-  font-weight: bold; /* Make the text bold */
-  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition effects */
-}
 
-/* Style when hovering over the link */
-a:hover {
-  color: #0056b3; /* Darker color on hover */
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Visited links styling */
-a:visited {
-  color: #6c757d; /* Different color for visited links */
-}
-
-/* Focused link styling */
-a:focus {
-  outline: none;
-  color: #004085; /* Color when the link is focused (clicked or tabbed into) */
-}
-
-/* Active link styling */
-a:active {
-  color: #003366; /* Color when the link is active (being clicked) */
-}
 
 
 .App {
@@ -126,6 +98,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  color: black;
 }
 
 .croma-price, .reliance-price {

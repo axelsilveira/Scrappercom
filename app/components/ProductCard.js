@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
             className="product-image reliance-image"
           />
         </div>
-        <h2 className="product-title">{product.name}</h2>
+        <h2 className="product-title">{product.unique_name}</h2>
         <div className="price-comparison">
           {/* Croma Pricing Section */}
           <div className="croma-section">
@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
             <a href={product.croma_link} target="_blank" rel="noopener noreferrer">
             Croma
             </a>: ₹{cromaPrice.toFixed(2)}
-              {cromaPrice === lowestPrice && <span className="lowest-price-tag">Lowest</span>}
+              {/* {cromaPrice === lowestPrice && <span className="lowest-price-tag">Lowest</span>} */}
             </p>
             <p className="product-mrp">
               MRP: <del>₹{cromaMrpPrice.toFixed(2) || 'N/A'}</del> {/* Display MRP below price */}
